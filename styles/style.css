@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 .teaser__panel {
@@ -19,6 +20,9 @@
   display: flex;
   gap: 10px;
   padding-right: 20px;
+}
+.teaser__element span {
+  font-size: 13px;
 }
 
 @media (max-width: 1024px) {
