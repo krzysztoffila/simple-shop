@@ -1,3 +1,5 @@
+CONFIG:
+folder style: sass --watch style.scss style.css
 MAIN: 
 
 1. TEASER:

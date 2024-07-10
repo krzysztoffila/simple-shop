@@ -1,0 +1,25 @@
+.teaser {
+  &__panel {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f62f61;
+    color: #ffffff;
+  }
+  &__element {
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+    padding-right: 20px;
+    span {
+      font-size: 13px;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .teaser__element--hidden {
+    display: none;
+  }
+}
