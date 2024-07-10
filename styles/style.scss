@@ -6,7 +6,7 @@
 }
 
 // teaser Panel
-.teaser__panel{
+.teaser__panel {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
@@ -15,33 +15,34 @@
   background-color: #F62F61;
   color: #FFFFFF;
 }
-.teaser__element{
+
+.teaser__element {
   margin: 20px;
   display: flex;
   gap: 10px;
   padding-right: 20px;
-    span {
-      font-size: 13px;
-    }
+  span {
+    font-size: 13px;
+  }
 }
 
 // Container
 .container {
-  max-width: 1200px; 
-  margin: 20px auto;    
-  padding: 20px;    
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
 }
 
 // Header
-.header{
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 10px;
-  
 }
-.header__menu-list{
+
+.header__menu-list {
   list-style-type: none;
   display: flex;
   justify-content: center;
@@ -49,12 +50,14 @@
   gap: 10px;
   flex-wrap: wrap;
 }
-.header__menu-link, .header__menu-link--sale{
+
+.header__menu-link, .header__menu-link--sale {
   text-decoration: none;
   color: #2C2E35;
   cursor: pointer;
 }
-.header__menu-link--sale{
+
+.header__menu-link--sale {
   font-weight: bold;
   color: #F62F61;
 }
@@ -67,16 +70,57 @@
   gap: 10px;
   flex-wrap: wrap;
 }
-.header__account--hidden{
+
+.header__account--hidden {
   display: none;
+}
+
+// Newsletter
+.newsletter {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #F62F61;
+  color: #FFFFFF;
+  border-radius: 16px;
+  margin: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.newsletter__content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  &--promo {
+    font-size: 24px;
+    &--value{
+      font-size: 30px;
+    }
+  }
+}
+
+.newsletter__text {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.newsletter__email {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.newsletter__checkbox{
+  display: flex;
+  font-size: 10px;
 }
 
 // Media Queries
 @media (max-width: 1024px) {
-  .teaser__element--hidden, .header__menu--hidden{
+  .teaser__element--hidden, .header__menu--hidden, .newsletter__checkbox--hidden, .newsletter__image--hidden {
     display: none;
   }
-  .header__account--hidden{
+
+  .header__account--hidden {
     display: inline-block;
   }
 }
@@ -90,5 +134,8 @@
   }
   .header__menu-list, .header__account-list {
     justify-content: center;
+  }
+  .newsletter {
+    padding: 10px;
   }
 }

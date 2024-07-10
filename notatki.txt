@@ -9,3 +9,7 @@ MAIN:
   [TODO] searchbar - ostylow, dodac ikone
   [TODO] zmienic kolejnosc elementow dla mobile
   [TODO] ikonka na mobile
+  
+3. NEWSLETTER:
+  [TODO] WALIDACJA MAILA I CHECKBOXA
+  [TODO] STYLOWANIE INPUTA + ikonka
