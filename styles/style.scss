@@ -2,5 +2,27 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: aliceblue;
+  // font-family: "Inter";
+}
+
+// teaser Panel
+.teaser__panel{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #F62F61;
+  color: #FFFFFF
+}
+.teaser__element{
+  margin: 20px;
+  display: flex;
+  gap: 10px;
+  padding-right: 20px;
+}
+@media (max-width: 1024px) {
+  .teaser__element--hidden{
+    display: none;
+  }
 }
