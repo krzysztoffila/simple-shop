@@ -1,5 +1,5 @@
 MAIN: 
-  [TODO] - DODAĆ alty, zamknąc img
+
 1. TEASER:
   [!!!!] Lista zachęty do zakupu - div, ul, aside ? - semantycznie
   [TODO] Zmniejszyc wysokość
@@ -16,3 +16,6 @@ MAIN:
 
 4. FOOTER: 
   [TODO] Pokombinowac z svg i zmianą koloru ikony(pobrac z headera)
+
+--DONE--
+[DONE] - DODAĆ alty, zamknąc img
