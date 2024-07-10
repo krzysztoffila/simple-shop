@@ -1,1 +1,11 @@
-1. Lista zachęty do zakupu - div, ul, aside ? - semantycznie
+MAIN: 
+  [TODO] - DODAĆ alty, zamknąc img
+1. TEASER:
+  [!!!!] Lista zachęty do zakupu - div, ul, aside ? - semantycznie
+  [TODO] Zmniejszyc wysokość
+
+2. HEADER:
+  [TODO] rozwijana lista menu
+  [TODO] searchbar - ostylow, dodac ikone
+  [TODO] zmienic kolejnosc elementow dla mobile
+  [TODO] ikonka na mobile
