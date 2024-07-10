@@ -13,3 +13,6 @@ MAIN:
 3. NEWSLETTER:
   [TODO] WALIDACJA MAILA I CHECKBOXA
   [TODO] STYLOWANIE INPUTA + ikonka
+
+4. FOOTER: 
+  [TODO] Pokombinowac z svg i zmianą koloru ikony(pobrac z headera)
