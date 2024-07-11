@@ -22,4 +22,7 @@ MAIN:
 --DONE--
 [DONE] WYPRZEDAZ - naprawic klase
 [DONE] - DODAĆ alty, zamknąc img
+
+--UWAGI--
 [!!!!] ikonka na mobile - - PROBLEM Z POBRANIEM IKONY MENU
+[NEWSLETTER] - waga fontu sie nie zgadza (text)
