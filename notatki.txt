@@ -11,7 +11,9 @@ MAIN:
   [TODO] searchbar - ostylow, dodac ikone
   [TODO] zmienic kolejnosc elementow dla mobile
   [TODO] ikonka na mobile
-  
+  [TODO]! WYPRZEDAZ - naprawic klase
+
+
 3. NEWSLETTER:
   [REGEX] WALIDACJA MAILA I CHECKBOXA
   [TODO] STYLOWANIE INPUTA + ikonka
