@@ -65,19 +65,19 @@
   flex-wrap: wrap;
 }
 
-.header__menu-link,
-.header__menu-link--sale {
-  text-decoration: none;
-  cursor: pointer;
+.header__account-icons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
-
 .header__account-item--searchbar {
   position: relative;
 }
 .header__account-item--searchbar img {
   position: absolute;
-  top: 13px;
+  top: 50%;
   right: 15px;
+  transform: translateY(-50%);
 }
 .header__account-list {
   list-style-type: none;
@@ -100,8 +100,14 @@
   background-color: #ffffff;
 }
 .header__account--search-input::placeholder {
-  color: #9aa0a6;
+  color: #2c2e35;
   padding-left: 20px;
+}
+
+.header__menu-link,
+.header__menu-link--sale {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 @media (max-width: 1024px) {
@@ -113,13 +119,27 @@
     display: inline-block;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .header {
-    justify-content: center;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
   }
-  .header__menu-list,
-  .header__account-list {
+  .header__account-item--searchbar {
+    align-items: center;
     justify-content: center;
+    order: 1;
+    margin: auto;
+    flex: 1;
+    width: 100%;
+    position: relative;
+  }
+  .header__account--search-input {
+    margin: auto;
+    min-width: 350px;
+  }
+  .header__account--search-input {
+    margin: auto;
+    min-width: 100%;
   }
 }
 .newsletter {
