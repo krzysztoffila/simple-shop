@@ -32,23 +32,33 @@
     display: flex;
     flex-direction: column;
     align-items: start;
+    gap: 10px;
+  }
+  &__input {
+    position: relative;
+    button {
+      position: absolute;
+      top: 29%;
+      right: 30px;
+    }
   }
   &__checkbox {
     display: flex;
     font-size: 10px;
+    gap: 10px;
     p a {
       color: #ffffff;
     }
   }
 }
-
-.newsletter_email-input {
+.newsletter__email-input {
   height: 48px;
   border: 1px solid #e3e3e3;
   border-radius: 80px;
   font-size: 16px;
   outline: none;
   background-color: #ffffff;
+  width: 340px;
 
   &::placeholder {
     color: #9aa0a6;
@@ -65,5 +75,7 @@
 @media (max-width: 768px) {
   .newsletter {
     padding: 10px;
+    display: flex;
+    flex-direction: column;
   }
 }
