@@ -38,6 +38,22 @@
 .header__account--hidden {
   display: none;
 }
+.header__account--search-input {
+  height: 48px;
+  border: 1px solid #e3e3e3;
+  border-radius: 80px;
+  font-size: 16px;
+  outline: none;
+  background-color: #ffffff;
+}
+.header__account--search-input::-moz-placeholder {
+  color: #9aa0a6;
+  padding-left: 20px;
+}
+.header__account--search-input::placeholder {
+  color: #9aa0a6;
+  padding-left: 20px;
+}
 
 @media (max-width: 1024px) {
   .header__menu--hidden,

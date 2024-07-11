@@ -39,6 +39,19 @@
   &--hidden {
     display: none;
   }
+  &--search-input {
+    height: 48px;
+    border: 1px solid #e3e3e3;
+    border-radius: 80px;
+    font-size: 16px;
+    outline: none;
+    background-color: #ffffff;
+
+    &::placeholder {
+      color: #9aa0a6;
+      padding-left: 20px;
+    }
+  }
 }
 @media (max-width: 1024px) {
   .header__menu--hidden,
@@ -50,7 +63,6 @@
     display: inline-block;
   }
 }
-
 @media (max-width: 768px) {
   .header {
     justify-content: center;
