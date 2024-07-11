@@ -110,16 +110,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 1024px) {
-  .header__menu--hidden,
-  .newsletter__image--hidden {
-    display: none;
-  }
-  .header__account--hidden {
-    display: inline-block;
-  }
-}
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .header {
     padding-bottom: 20px;
     flex-wrap: wrap;
@@ -135,11 +126,14 @@
   }
   .header__account--search-input {
     margin: auto;
-    min-width: 350px;
-  }
-  .header__account--search-input {
-    margin: auto;
     min-width: 100%;
+  }
+  .header__menu--hidden,
+  .newsletter__image--hidden {
+    display: none;
+  }
+  .header__account--hidden {
+    display: inline-block;
   }
 }
 .newsletter {
