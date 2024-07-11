@@ -38,10 +38,10 @@
 .newsletter__input {
   position: relative;
 }
-.newsletter__input button {
+.newsletter__input--button {
   position: absolute;
-  top: 29%;
-  right: 30px;
+  top: 4px;
+  right: 10px;
 }
 .newsletter__checkbox {
   display: flex;
@@ -53,7 +53,7 @@
 }
 
 .newsletter__email-input {
-  height: 48px;
+  height: 56px;
   border: 1px solid #e3e3e3;
   border-radius: 80px;
   font-size: 16px;
@@ -78,8 +78,41 @@
 }
 @media (max-width: 768px) {
   .newsletter {
-    padding: 10px;
+    padding: 20px 10px;
     display: flex;
     flex-direction: column;
+  }
+  .newsletter__content--promo {
+    margin: 20px 0 10px 0;
+    font-size: 20px;
+  }
+  .newsletter__promo--value {
+    font-size: 24px;
+  }
+  .newsletter__text {
+    font-size: 13px;
+    font-weight: 300;
+    max-width: 500px;
+  }
+  .newsletter__input--button {
+    top: 0px;
+    right: -1px;
+  }
+  .newsletter__email-input {
+    max-width: 318px;
+    height: 48px;
+    border: 1px solid #e3e3e3;
+    border-radius: 80px;
+    font-size: 16px;
+    outline: none;
+    background-color: #ffffff;
+  }
+  .newsletter__email-input::-moz-placeholder {
+    color: #9aa0a6;
+    padding-left: 20px;
+  }
+  .newsletter__email-input::placeholder {
+    color: #9aa0a6;
+    padding-left: 20px;
   }
 }/*# sourceMappingURL=newsletter.css.map */

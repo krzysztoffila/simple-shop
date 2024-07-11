@@ -27,3 +27,4 @@ MAIN:
 [!!!!] ikonka na mobile - - PROBLEM Z POBRANIEM IKONY MENU
 [NEWSLETTER] - waga fontu sie nie zgadza (text)
 [NEWSLETTER] - checkbox border
+[CONFIG] - Problem z configiem sass - map.css oraz css do osobnego folderu
