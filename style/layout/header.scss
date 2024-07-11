@@ -17,7 +17,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 10px;
+      gap: 103px;
       flex-wrap: wrap;
     }
   }
@@ -41,6 +41,7 @@
   }
   &--search-input {
     height: 48px;
+    width: 228px;
     border: 1px solid #e3e3e3;
     border-radius: 80px;
     font-size: 16px;
