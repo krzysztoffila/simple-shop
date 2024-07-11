@@ -1,17 +1,15 @@
 CONFIG:
 folder style: sass --watch style.scss style.css
 MAIN: 
-
+ 
 1. TEASER:
-  [!!!!] Lista zachęty do zakupu - div, ul, aside ? - semantycznie
   [TODO] Zmniejszyc wysokość
 
 2. HEADER:
   [TODO] rozwijana lista menu
   [TODO] searchbar - ostylow, dodac ikone
   [TODO] zmienic kolejnosc elementow dla mobile
-  [TODO] ikonka na mobile
-  [TODO]! WYPRZEDAZ - naprawic klase
+
 
 
 3. NEWSLETTER:
@@ -22,4 +20,6 @@ MAIN:
   [TODO] Pokombinowac z svg i zmianą koloru ikony(pobrac z headera)
 
 --DONE--
+[DONE] WYPRZEDAZ - naprawic klase
 [DONE] - DODAĆ alty, zamknąc img
+[!!!!] ikonka na mobile - - PROBLEM Z POBRANIEM IKONY MENU
