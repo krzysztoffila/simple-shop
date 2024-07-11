@@ -49,6 +49,13 @@
   flex-wrap: wrap;
   padding: 10px;
 }
+.header__menu-link {
+  color: #2c2e35;
+}
+.header__menu-link--sale {
+  font-weight: bold;
+  color: #f62f61;
+}
 .header__menu-list {
   list-style-type: none;
   display: flex;
@@ -57,15 +64,10 @@
   gap: 10px;
   flex-wrap: wrap;
 }
-.header__menu-link--sale {
-  font-weight: bold;
-  color: #f62f61;
-}
 
 .header__menu-link,
 .header__menu-link--sale {
   text-decoration: none;
-  color: #2c2e35;
   cursor: pointer;
 }
 
