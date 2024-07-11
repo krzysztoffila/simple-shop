@@ -12,7 +12,7 @@
 .footer__social {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   align-items: center;
 }
 .footer__contact {
@@ -29,14 +29,34 @@
 .footer__contact :nth-of-type(3) {
   font-size: 13px;
 }
+.footer__contact span img {
+  padding-right: 10px;
+}
+.footer__icons {
+  display: flex;
+  gap: 20px;
+}
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .footer {
     display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+  .footer__contact {
+    gap: 10px;
+    text-align: center;
     justify-content: center;
   }
+  .footer__contact span:nth-child(3) {
+    display: flex;
+    font-size: 10px;
+    line-height: 16px;
+    width: 133px;
+    text-align: left;
+  }
 }
-@media (max-width: 768px) {
+@media (max-width: 400px) {
   .footer {
     padding: 10px;
   }

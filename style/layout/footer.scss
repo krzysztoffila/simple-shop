@@ -11,7 +11,7 @@
   &__social {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
   }
   &__contact {
@@ -27,16 +27,36 @@
     & :nth-of-type(3) {
       font-size: 13px;
     }
+    span img {
+      padding-right: 10px;
+    }
+  }
+  &__icons {
+    display: flex;
+    gap: 20px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .footer {
     display: flex;
-    justify-content: center;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    &__contact {
+      gap: 10px;
+      text-align: center;
+      justify-content: center;
+      & span:nth-child(3) {
+        display: flex;
+        font-size: 10px;
+        line-height: 16px;
+        width: 133px;
+        text-align: left;
+      }
+    }
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 400px) {
   .footer {
     padding: 10px;
   }
