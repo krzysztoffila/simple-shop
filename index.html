@@ -9,6 +9,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 </head>
 
 <body>
@@ -54,7 +58,7 @@
       </nav>
       <nav class="header__account-item--searchbar">
         <input type="text" placeholder="Wyszukaj" class="header__account--search-input" />
-        <img src="./assets/header-search.svg" alt="">
+        <img src="./assets/header-search.svg" alt="" />
       </nav>
       <nav class="header__account-menu">
         <ul class="header__account-list">
@@ -81,6 +85,22 @@
         </ul>
       </nav>
     </header>
+    <section class="slider">
+      <article class="slide_1">
+        <div class="slide_1__content">
+          <div class="slide_1__text">
+            <h3>Nowa kolekcja</h3>
+            <h4>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+              rem aperiam, eaque ipsa quae ab.
+            </h4>
+          </div>
+          <div class="slide_1__button">
+            <button>Zobacz więcej</button>
+          </div>
+        </div>
+      </article>
+    </section>
     <section class="newsletter">
       <div class="newsletter__left">
         <img class="newsletter__image newsletter__image--hidden" src="./assets/newsletter-envelope.svg"
@@ -100,7 +120,9 @@
       <form class="newsletter__email">
         <div class="newsletter__input">
           <input type="email" name="email" class="newsletter__email-input" id="email" placeholder="Twój adres email" />
-          <div class="newsletter__input--button"><img src="./assets/newsletter-mail-send.svg" alt=""></div>
+          <div class="newsletter__input--button">
+            <img src="./assets/newsletter-mail-send.svg" alt="" />
+          </div>
         </div>
         <div class="newsletter__checkbox newsletter__checkbox--hidden">
           <input type="checkbox" name="checkbox" id="checkbox" class="newsletter__checkbox--check" />
@@ -109,7 +131,6 @@
             <a href="#">Politykę Prywatności</a>.
           </p>
         </div>
-
       </form>
     </section>
     <footer class="footer">
@@ -127,13 +148,19 @@
         <span>
           <h3>Skontaktuj się z nami</h3>
         </span>
-        <span><img src="./assets/footer-phone.svg" alt="cellphone icon" />(+48) 48 623 18 02</span>
+        <span><img src="./assets/footer-phone.svg" alt="cellphone icon" />(+48)
+          48 623 18 02</span>
         <span>Jesteśmy do Twojej dyspozycji, <br />
           od poniedziałku do piątku <br />w godzinach 8:00 - 16:00</span>
       </div>
     </footer>
   </div>
   <script src="./script.js" defer></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="/slider.js"></script>
 </body>
 
 </html>

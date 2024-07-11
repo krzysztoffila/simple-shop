@@ -1,0 +1,36 @@
+.slider {
+  height: 560px;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 16px;
+}
+.slide_1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  &__text {
+    h3 {
+      font-size: 40px;
+      line-height: 62px;
+    }
+    h4 {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+
+  &__button button {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    background-color: inherit;
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+    padding: 8px 16px;
+    color: #ffffff;
+  }
+}
