@@ -27,6 +27,14 @@
   cursor: pointer;
 }
 
+.header__account-item--searchbar {
+  position: relative;
+}
+.header__account-item--searchbar img {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+}
 .header__account-list {
   list-style-type: none;
   display: flex;

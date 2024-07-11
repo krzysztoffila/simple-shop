@@ -28,6 +28,14 @@
   cursor: pointer;
 }
 .header__account {
+  &-item--searchbar {
+    position: relative;
+    img {
+      position: absolute;
+      top: 13px;
+      right: 15px;
+    }
+  }
   &-list {
     list-style-type: none;
     display: flex;
