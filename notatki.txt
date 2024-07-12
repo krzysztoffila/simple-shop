@@ -1,33 +1,17 @@
 CONFIG:
 folder style: sass --watch style.scss style.css
- 
-1. SLIDER:
-  [TODO] dokumentacja - problem z nadaniem klas flexbox na SLIDER
 
-2. categories:
-  [TODO] - picture zamiast img
-  [TODO] - fetch obrazków
-  **Obrazki** (opcjonalne):
-    - Pobieraj obrazki w sekcji "Kategorie" z API [picsum.photos](https://picsum.photos/).
-    - Zaimplementuj lazy loading dla obrazków, aby zoptymalizować ładowanie strony.
-
-
---DONE--
-[DONE] WYPRZEDAZ - naprawic klase
-[DONE] - DODAĆ alty, zamknąc img
-[DONE] STYLOWANIE INPUTA + ikonka
-[DONE] Pokombinowac z svg i zmianą koloru ikony(pobrac z headera)
-[DONE] searchbar - ostylow, dodac ikone
-[DONE] zmienic kolejnosc elementow dla mobile
-[DONE] Zmniejszyc wysokość
-[DONE] - object fit itp. na dowolny obrazek
 
 --UWAGI--
-[HEADER] ikonka na mobile - - PROBLEM Z POBRANIEM IKONY MENU
-[NEWSLETTER] - waga fontu sie nie zgadza (text)
-[NEWSLETTER] - checkbox border
-[CONFIG] - Problem z configiem sass - map.css oraz css do osobnego folderu
-[HEADER] rozwijana lista menu
-[categories] - nie robiłem nigdy lazy loading
-[DONE] - Lazy loading - attr w html, lub za pomoca js
-[NEWSLETTER] WALIDACJA MAILA I CHECKBOXA - na mniejszej wielkosci nie ma checkboxa. 
+[MAIN] - W niektórych przypadkach wagi fontów oraz odstępy się nie zgadzają
+[CONFIG] Problem z configiem sass -> map.css oraz css do osobnego folderu
+[SLIDER] Dokumentacja - Problem z nadaniem klas flexbox na SLIDER - .slick-slide
+[SLIDER] Problem z nadaniem styli strzałkom (są niewidoczne na białym tle)
+[HEADER] Problem z pobraniem ikonki lupy oraz listy menu(trzy paski)
+[HEADER] Czy miało być rozwijane menu ?
+[CATEGORIES] - Zamiast img mozna zastosować picture>source media
+[NEWSLETTER] Walidacja checkboxa - Na mniejszej szerokości on znika, więc zastosowałem sprawdzenie szerokości ekranu
+
+[TODO][ALL SECTIONS] - Poprawki kosmetyczne 
+[TODO][CATEGORIES] - Nigdy nie robiłem lazy loading
+[TODO][NEWSLETTER] - Checkbox border
