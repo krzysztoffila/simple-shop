@@ -28,11 +28,12 @@
   border-radius: 16px;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 768px) {
   .column {
     flex-direction: column;
   }
-}
+}/*# sourceMappingURL=categories.css.map */
