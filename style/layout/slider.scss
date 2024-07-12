@@ -1,26 +1,16 @@
 .slider {
-  height: 560px;
-  background-size: cover;
-  background-position: center;
   margin: 20px;
-  display: flex;
-  flex-direction: column-reverse;
 }
-.slide_1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+/* Marginem i paddingiem steruję wysokością */
+.slide_1,
+.slide_2 {
   background-image: url("../../assets/slider-image.svg");
-  background-repeat: no-repeat;
-  height: 100%;
-  background-position: center center;
   background-size: cover;
-  border-radius: 16px;
   color: aliceblue;
-  padding: 20px;
-  width: 100%;
-  height: 100%;
-  &__text {
+  padding: 220px 0;
+  border-radius: 16px;
+  object-fit: cover;
+  fit &__text {
     h3 {
       font-size: 40px;
       line-height: 62px;
@@ -33,7 +23,6 @@
       max-width: 580px;
     }
   }
-
   &__button button {
     font-size: 14px;
     line-height: 20px;
