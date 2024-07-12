@@ -10,8 +10,9 @@ btnNewsletter.addEventListener("click", (e) => {
   e.preventDefault();
   const emailValue = inputEmail.value.trim();
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const isCheckboxRequired = window.innerWidth > 768;
 
-  if (emailValue !== "" && chekboxEmail.checked) {
+  if ((emailValue !== "" && chekboxEmail.checked) || !isCheckboxRequired) {
     if (emailRegex.test(emailValue)) {
       alert(
         `Zapisałeś się do newslettera - sprawdź skrzynkę na ${emailValue} i odbierz 5% rabatu!`

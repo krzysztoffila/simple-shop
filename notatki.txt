@@ -7,6 +7,9 @@ folder style: sass --watch style.scss style.css
 2. PRODUCTS:
   [TODO] - object fit itp. na dowolny obrazek
   [TODO] - fetch obrazków
+  **Obrazki** (opcjonalne):
+    - Pobieraj obrazki w sekcji "Kategorie" z API [picsum.photos](https://picsum.photos/).
+    - Zaimplementuj lazy loading dla obrazków, aby zoptymalizować ładowanie strony.
 
 
 --DONE--
