@@ -45,14 +45,11 @@ async function getImages() {
 const categoryImages = Array.from(
   document.querySelectorAll(".category__photo img")
 );
-console.log(categoryImages.length);
 
 (async () => {
   const images = await getImages();
-  console.log(images.length);
 
   for (let i = 0; i < images.length && i < categoryImages.length; i++) {
-    console.log(images[i].download_url);
     categoryImages[i].src = images[i].download_url;
   }
 })();
