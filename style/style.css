@@ -188,7 +188,8 @@
 @media (max-width: 768px) {
   .slide_1 {
     flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 }
 .products {
