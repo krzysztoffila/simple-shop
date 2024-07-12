@@ -1,10 +1,9 @@
 "use strict";
+
 // Email Validation
 const btnNewsletter = document.querySelector(".newsletter__input--button");
 const inputEmail = document.querySelector(".newsletter__email-input");
 const chekboxEmail = document.querySelector(".newsletter__checkbox--check");
-const slider = document.querySelector(".slider");
-const slide_1 = document.querySelector(".slide_1");
 
 btnNewsletter.addEventListener("click", (e) => {
   e.preventDefault();
@@ -28,7 +27,7 @@ btnNewsletter.addEventListener("click", (e) => {
 
 // Fetch images
 async function getImages() {
-  const url = "https://picsum.photos/v2/list?page=2&limit=10";
+  const url = "https://picsum.photos/v2/list?page=12&limit=10";
   try {
     const response = await fetch(url);
     if (!response.ok) {
@@ -41,11 +40,19 @@ async function getImages() {
     return [];
   }
 }
-// Zastosowac na kategorie
-// (async () => {
-//   const images = await getImages();
-//   const firstImage = images[0];
-//   document.querySelector(
-//     ".slider"
-//   ).style.backgroundImage = `url(${firstImage.download_url})`;
-// })();
+
+// Set images to category images
+const categoryImages = Array.from(
+  document.querySelectorAll(".category__photo img")
+);
+console.log(categoryImages.length);
+
+(async () => {
+  const images = await getImages();
+  console.log(images.length);
+
+  for (let i = 0; i < images.length && i < categoryImages.length; i++) {
+    console.log(images[i].download_url);
+    categoryImages[i].src = images[i].download_url;
+  }
+})();
