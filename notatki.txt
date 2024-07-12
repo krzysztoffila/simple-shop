@@ -5,7 +5,7 @@ folder style: sass --watch style.scss style.css
   [TODO] dokumentacja - problem z nadaniem klas flexbox na SLIDER
 
 2. categories:
-  [TODO] - object fit itp. na dowolny obrazek
+  [TODO] - picture zamiast img
   [TODO] - fetch obrazków
   **Obrazki** (opcjonalne):
     - Pobieraj obrazki w sekcji "Kategorie" z API [picsum.photos](https://picsum.photos/).
@@ -20,6 +20,7 @@ folder style: sass --watch style.scss style.css
 [DONE] searchbar - ostylow, dodac ikone
 [DONE] zmienic kolejnosc elementow dla mobile
 [DONE] Zmniejszyc wysokość
+[DONE] - object fit itp. na dowolny obrazek
 
 --UWAGI--
 [HEADER] ikonka na mobile - - PROBLEM Z POBRANIEM IKONY MENU
