@@ -1,17 +1,13 @@
 CONFIG:
 folder style: sass --watch style.scss style.css
-MAIN: 
  
-1. HEADER:
-  [TODO] rozwijana lista menu
-
 2. SLIDER:
   [TODO] dokumentacja - problem z nadaniem klas flexbox na SLIDER
 
 3. PRODUCTS:
   [TODO] - object fit itp. na dowolny obrazek
   [TODO] - fetch obrazków
-  [TODO] - Lazy loading - attr w html, lub za pomoca js
+
 
 4. NEWSLETTER:
   [REGEX] WALIDACJA MAILA I CHECKBOXA
@@ -30,4 +26,6 @@ MAIN:
 [NEWSLETTER] - waga fontu sie nie zgadza (text)
 [NEWSLETTER] - checkbox border
 [CONFIG] - Problem z configiem sass - map.css oraz css do osobnego folderu
-
+[HEADER] rozwijana lista menu
+[PRODUCTS] - nie robiłem nigdy lazy loading
+[DONE] - Lazy loading - attr w html, lub za pomoca js
