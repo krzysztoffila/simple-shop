@@ -9,9 +9,10 @@ folder style: sass --watch style.scss style.css
 [SLIDER] Problem z nadaniem styli strzałkom (są niewidoczne na białym tle)
 [HEADER] Problem z pobraniem ikonki lupy oraz listy menu(trzy paski)
 [HEADER] Czy miało być rozwijane menu ?
-[CATEGORIES] - Zamiast img mozna zastosować picture>source media
+
 [NEWSLETTER] Walidacja checkboxa - Na mniejszej szerokości on znika, więc zastosowałem sprawdzenie szerokości ekranu
 
 [TODO][ALL SECTIONS] - Poprawki kosmetyczne 
+[TODO][CATEGORIES] - Zamiast img mozna zastosować picture>source media
 [TODO][CATEGORIES] - Nigdy nie robiłem lazy loading
 [TODO][NEWSLETTER] - Checkbox border
