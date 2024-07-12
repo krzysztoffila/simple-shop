@@ -4,7 +4,11 @@
   justify-content: space-between;
 }
 
-.column {
+.category__name {
+  display: none;
+}
+
+.category__column {
   display: flex;
   flex-direction: column;
   margin: 20px;
@@ -41,9 +45,22 @@
   .categories {
     flex-direction: column;
   }
-  .column {
+  .category__column {
     flex-direction: row;
     width: 100%;
     height: 100%;
+  }
+  .category__photo {
+    position: relative;
+  }
+  .category__photo .category__name {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 24px;
+    color: #ffffff;
   }
 }/*# sourceMappingURL=categories.css.map */
