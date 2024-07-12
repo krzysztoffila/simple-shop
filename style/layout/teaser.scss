@@ -7,14 +7,16 @@
     align-items: center;
     background-color: #f62f61;
     color: #ffffff;
+    padding: 6px 0;
   }
   &__element {
-    margin: 20px;
     display: flex;
     gap: 10px;
     padding-right: 20px;
     span {
       font-size: 13px;
+      font-weight: 600;
+      line-height: 20px;
     }
   }
 }

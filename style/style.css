@@ -26,15 +26,17 @@
   align-items: center;
   background-color: #f62f61;
   color: #ffffff;
+  padding: 6px 0;
 }
 .teaser__element {
-  margin: 20px;
   display: flex;
   gap: 10px;
   padding-right: 20px;
 }
 .teaser__element span {
   font-size: 13px;
+  font-weight: 600;
+  line-height: 20px;
 }
 
 @media (max-width: 1024px) {

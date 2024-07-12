@@ -2,21 +2,18 @@ CONFIG:
 folder style: sass --watch style.scss style.css
 MAIN: 
  
-1. TEASER:
-  [TODO] Zmniejszyc wysokość
-
-2. HEADER:
+1. HEADER:
   [TODO] rozwijana lista menu
 
-3. SLIDER:
+2. SLIDER:
   [TODO] dokumentacja - problem z nadaniem klas flexbox na SLIDER
 
-4. PRODUCTS:
+3. PRODUCTS:
   [TODO] - object fit itp. na dowolny obrazek
   [TODO] - fetch obrazków
   [TODO] - Lazy loading - attr w html, lub za pomoca js
 
-5. NEWSLETTER:
+4. NEWSLETTER:
   [REGEX] WALIDACJA MAILA I CHECKBOXA
 
 --DONE--
@@ -26,6 +23,7 @@ MAIN:
 [DONE] Pokombinowac z svg i zmianą koloru ikony(pobrac z headera)
 [DONE] searchbar - ostylow, dodac ikone
 [DONE] zmienic kolejnosc elementow dla mobile
+[DONE] Zmniejszyc wysokość
 
 --UWAGI--
 [!!!!] ikonka na mobile - - PROBLEM Z POBRANIEM IKONY MENU
