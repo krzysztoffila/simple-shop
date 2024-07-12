@@ -14,8 +14,6 @@
   background-image: url("../../assets/slider-image.svg");
   background-repeat: no-repeat;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
   background-position: center center;
   background-size: cover;
   border-radius: 16px;
