@@ -1,7 +1,7 @@
 "use strict";
 // Email Validation
 const btnNewsletter = document.querySelector(".newsletter__input--button");
-const inputEmail = document.querySelector(".newsletter_email-input");
+const inputEmail = document.querySelector(".newsletter__email-input");
 const chekboxEmail = document.querySelector(".newsletter__checkbox--check");
 const slider = document.querySelector(".slider");
 const slide_1 = document.querySelector(".slide_1");
@@ -9,11 +9,16 @@ const slide_1 = document.querySelector(".slide_1");
 btnNewsletter.addEventListener("click", (e) => {
   e.preventDefault();
   const emailValue = inputEmail.value.trim();
-  if (emailValue != "" && chekboxEmail.checked) {
-    // DODAĆ REGEX MAILA
-    alert(
-      `Zapisałeś się do newslettera - sprawdź skrzynkę na ${emailValue} i odbierz 5% rabatu!`
-    );
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (emailValue !== "" && chekboxEmail.checked) {
+    if (emailRegex.test(emailValue)) {
+      alert(
+        `Zapisałeś się do newslettera - sprawdź skrzynkę na ${emailValue} i odbierz 5% rabatu!`
+      );
+    } else {
+      alert("Podaj poprawny adres e-mail!");
+    }
   } else {
     alert("Uzupełnij pole e-mail i zaakceptuj warunki!");
     inputEmail.value = "";

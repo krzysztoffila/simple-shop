@@ -1,16 +1,13 @@
 CONFIG:
 folder style: sass --watch style.scss style.css
  
-2. SLIDER:
+1. SLIDER:
   [TODO] dokumentacja - problem z nadaniem klas flexbox na SLIDER
 
-3. PRODUCTS:
+2. PRODUCTS:
   [TODO] - object fit itp. na dowolny obrazek
   [TODO] - fetch obrazków
 
-
-4. NEWSLETTER:
-  [REGEX] WALIDACJA MAILA I CHECKBOXA
 
 --DONE--
 [DONE] WYPRZEDAZ - naprawic klase
@@ -22,10 +19,11 @@ folder style: sass --watch style.scss style.css
 [DONE] Zmniejszyc wysokość
 
 --UWAGI--
-[!!!!] ikonka na mobile - - PROBLEM Z POBRANIEM IKONY MENU
+[HEADER] ikonka na mobile - - PROBLEM Z POBRANIEM IKONY MENU
 [NEWSLETTER] - waga fontu sie nie zgadza (text)
 [NEWSLETTER] - checkbox border
 [CONFIG] - Problem z configiem sass - map.css oraz css do osobnego folderu
 [HEADER] rozwijana lista menu
 [PRODUCTS] - nie robiłem nigdy lazy loading
 [DONE] - Lazy loading - attr w html, lub za pomoca js
+[NEWSLETTER] WALIDACJA MAILA I CHECKBOXA - na mniejszej wielkosci nie ma checkboxa. 
