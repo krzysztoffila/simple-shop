@@ -1,16 +1,25 @@
 .slider {
-  margin: 20px;
+  margin: 0 20px;
 }
-/* Marginem i paddingiem steruję wysokością */
-.slide_1,
-.slide_2 {
+.slick-track {
+  display: flex !important;
+  height: 520px;
+}
+.slick-slide {
+  display: flex !important;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 80px 80px 80px;
+}
+.slide {
   background-image: url("../../assets/slider-image.svg");
+  background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
   color: aliceblue;
-  padding: 220px 0;
   border-radius: 16px;
-  object-fit: cover;
-  fit &__text {
+  &__text {
     h3 {
       font-size: 40px;
       line-height: 62px;
@@ -34,10 +43,30 @@
     color: #ffffff;
   }
 }
-@media (max-width: 768px) {
-  .slide_1 {
+
+@media (max-width: 1024px) {
+  .slick-slide {
     flex-direction: column;
-    flex-wrap: wrap;
+    align-items: flex-start;
     justify-content: flex-end;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .slide {
+    &__text {
+      h3 {
+        font-size: 28px;
+        font-weight: 900;
+        line-height: 33.89px;
+        text-align: left;
+      }
+      h4 {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+        text-align: left;
+        margin-bottom: 20px;
+      }
+    }
   }
 }
