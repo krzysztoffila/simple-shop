@@ -41,11 +41,11 @@ async function getImages() {
     return [];
   }
 }
-
-(async () => {
-  const images = await getImages();
-  const firstImage = images[0];
-  document.querySelector(
-    ".slider"
-  ).style.backgroundImage = `url(${firstImage.download_url})`;
-})();
+// Zastosowac na kategorie
+// (async () => {
+//   const images = await getImages();
+//   const firstImage = images[0];
+//   document.querySelector(
+//     ".slider"
+//   ).style.backgroundImage = `url(${firstImage.download_url})`;
+// })();
