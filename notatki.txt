@@ -4,7 +4,7 @@ folder style: sass --watch style.scss style.css
 1. SLIDER:
   [TODO] dokumentacja - problem z nadaniem klas flexbox na SLIDER
 
-2. PRODUCTS:
+2. categories:
   [TODO] - object fit itp. na dowolny obrazek
   [TODO] - fetch obrazków
   **Obrazki** (opcjonalne):
@@ -27,6 +27,6 @@ folder style: sass --watch style.scss style.css
 [NEWSLETTER] - checkbox border
 [CONFIG] - Problem z configiem sass - map.css oraz css do osobnego folderu
 [HEADER] rozwijana lista menu
-[PRODUCTS] - nie robiłem nigdy lazy loading
+[categories] - nie robiłem nigdy lazy loading
 [DONE] - Lazy loading - attr w html, lub za pomoca js
 [NEWSLETTER] WALIDACJA MAILA I CHECKBOXA - na mniejszej wielkosci nie ma checkboxa. 
