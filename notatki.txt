@@ -3,16 +3,15 @@ folder style: sass --watch style.scss style.css
 
 
 --UWAGI--
-[MAIN] - W niektórych przypadkach wagi fontów oraz odstępy się nie zgadzają
+[MAIN] - W niektórych przypadkach atrybuty tekstu oraz odstępy się nie zgadzają
 [CONFIG] Problem z configiem sass -> map.css oraz css do osobnego folderu
 [SLIDER] Dokumentacja - Problem z nadaniem klas flexbox na SLIDER - .slick-slide
 [SLIDER] Problem z nadaniem styli strzałkom (są niewidoczne na białym tle)
 [HEADER] Problem z pobraniem ikonki lupy oraz listy menu(trzy paski)
 [HEADER] Czy miało być rozwijane menu ?
-
 [NEWSLETTER] Walidacja checkboxa - Na mniejszej szerokości on znika, więc zastosowałem sprawdzenie szerokości ekranu
-
+____
+[DONE][CATEGORIES] - Zamiast img mozna zastosować picture>source media
 [TODO][ALL SECTIONS] - Poprawki kosmetyczne 
-[TODO][CATEGORIES] - Zamiast img mozna zastosować picture>source media
 [TODO][CATEGORIES] - Nigdy nie robiłem lazy loading
 [TODO][NEWSLETTER] - Checkbox border

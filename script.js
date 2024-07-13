@@ -42,14 +42,14 @@ async function getImages() {
 }
 
 // Set images to category images
-const categoryImages = Array.from(
-  document.querySelectorAll(".category__photo img")
+const categoryPictures = Array.from(
+  document.querySelectorAll(".category__photo picture source")
 );
 
 (async () => {
   const images = await getImages();
 
-  for (let i = 0; i < images.length && i < categoryImages.length; i++) {
-    categoryImages[i].src = images[i].download_url;
+  for (let i = 0; i < images.length && i < categoryPictures.length; i++) {
+    categoryPictures[i].srcset = images[i].download_url;
   }
 })();
