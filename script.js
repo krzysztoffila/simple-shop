@@ -27,7 +27,7 @@ btnNewsletter.addEventListener("click", (e) => {
 
 // Fetch images
 async function getImages() {
-  const url = "https://picsum.photos/v2/list?page=12&limit=10";
+  const url = "https://picsum.photos/v2/list?page=1&limit=10";
   try {
     const response = await fetch(url);
     if (!response.ok) {
@@ -43,13 +43,35 @@ async function getImages() {
 
 // Set images to category images
 const categoryPictures = Array.from(
-  document.querySelectorAll(".category__photo picture source")
+  document.querySelectorAll(".category__photo picture img")
 );
 
 (async () => {
   const images = await getImages();
 
   for (let i = 0; i < images.length && i < categoryPictures.length; i++) {
-    categoryPictures[i].srcset = images[i].download_url;
+    categoryPictures[i].src = images[i].download_url;
+    categoryPictures[i].dataset.src = images[i].download_url;
   }
 })();
+
+// Lazy loading - zbyt długo się ładują obrazki - odkomentować .blur w categories.scss
+const imgTargets = document.querySelectorAll("img[data-src]");
+
+const loadImg = function (entries, observer) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
+
+  entry.target.src = entry.target.dataset.src;
+  entry.target.addEventListener("load", function () {
+    entry.target.classList.remove("lazy-img");
+  });
+  observer.unobserve(entry.target);
+};
+
+const imgObserver = new IntersectionObserver(loadImg, {
+  root: null,
+  threshold: 0,
+  rootMargin: "-600px",
+});
+imgTargets.forEach((img) => imgObserver.observe(img));

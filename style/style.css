@@ -243,6 +243,9 @@
   object-fit: cover;
 }
 
+/* .lazy-img {
+  filter: blur(10px);
+} */
 @media (max-width: 1240px) {
   .category__photo--big,
   .category__photo--small {
