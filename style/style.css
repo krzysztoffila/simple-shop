@@ -229,10 +229,12 @@
 
 .category__photo--big {
   flex: 0 0 65%;
+  height: 65%;
 }
 
 .category__photo--small {
   flex: 0 0 35%;
+  height: 35%;
 }
 
 .category__photo--big img,
