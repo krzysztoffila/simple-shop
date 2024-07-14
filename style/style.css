@@ -251,8 +251,7 @@
   .category__photo--big,
   .category__photo--small {
     flex-basis: calc(50% - 30px);
-    height: 174px;
-    width: 174px;
+    height: auto;
   }
   .categories {
     flex-direction: column;
