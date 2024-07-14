@@ -3,17 +3,19 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.category__name {
-  display: none;
-}
-.category__column {
-  display: flex;
-  flex-direction: column;
-  margin: 20px;
-  gap: 20px;
-  overflow: hidden;
-  border-radius: 16px;
-  width: calc(25% - 40px);
+.category {
+  &__name {
+    display: none;
+  }
+  &__column {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    gap: 20px;
+    overflow: hidden;
+    border-radius: 16px;
+    width: calc(25% - 40px);
+  }
 }
 
 .category__photo--big {

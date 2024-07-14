@@ -216,7 +216,6 @@
 .category__name {
   display: none;
 }
-
 .category__column {
   display: flex;
   flex-direction: column;
