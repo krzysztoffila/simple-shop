@@ -45,16 +45,21 @@ async function getImages() {
 const categoryPictures = Array.from(
   document.querySelectorAll(".category__photo picture img")
 );
+const categorySource = Array.from(
+  document.querySelectorAll(".category__photo picture source")
+);
 
 (async () => {
   const images = await getImages();
 
   for (let i = 0; i < images.length && i < categoryPictures.length; i++) {
-    categoryPictures[i].src = images[i].download_url;
-    categoryPictures[i].dataset.src = images[i].download_url;
+    categoryPictures[i].src =
+      categoryPictures[i].dataset.src =
+      categorySource[i].srcset =
+      categorySource[i].data =
+        images[i].download_url;
   }
 })();
-
 // Lazy loading - zbyt długo się ładują obrazki - odkomentować .blur w categories.scss
 const imgTargets = document.querySelectorAll("img[data-src]");
 
