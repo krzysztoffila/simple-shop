@@ -1,0 +1,1 @@
+.teaser__panel{list-style-type:none;display:flex;flex-wrap:wrap;justify-content:space-around;align-items:center;background-color:#f62f61;color:#fff;padding:6px 0}.teaser__element{display:flex;gap:10px;padding-right:20px}.teaser__element span{font-size:13px;font-weight:600;line-height:20px}@media(max-width: 1024px){.teaser__element--hidden{display:none}}
