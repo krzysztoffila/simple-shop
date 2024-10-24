@@ -9,19 +9,31 @@
     color: #ffffff;
     padding: 6px 0;
   }
+
   &__element {
     display: flex;
+    align-items: center;
     gap: 10px;
     padding-right: 20px;
+
+    a,
     span {
+      color: #ffffff;
+      text-decoration: none;
       font-size: 13px;
-      font-weight: 600;
+      font-weight: 300;
       line-height: 20px;
     }
+
+    img {
+      width: 20px;
+      height: auto;
+    }
   }
-}
-@media (max-width: 1024px) {
-  .teaser__element--hidden {
-    display: none;
+
+  @media (max-width: 1024px) {
+    .teaser__element--hidden {
+      display: none;
+    }
   }
 }

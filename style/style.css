@@ -30,20 +30,28 @@
 }
 .teaser__element {
   display: flex;
+  align-items: center;
   gap: 10px;
   padding-right: 20px;
 }
+.teaser__element a,
 .teaser__element span {
+  color: #ffffff;
+  text-decoration: none;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 300;
   line-height: 20px;
 }
-
+.teaser__element img {
+  width: 20px;
+  height: auto;
+}
 @media (max-width: 1024px) {
-  .teaser__element--hidden {
+  .teaser .teaser__element--hidden {
     display: none;
   }
 }
+
 .header {
   display: flex;
   align-items: center;
