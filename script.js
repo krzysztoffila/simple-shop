@@ -27,7 +27,7 @@ btnNewsletter.addEventListener("click", (e) => {
 
 // Fetch images
 async function getImages() {
-  const url = "https://picsum.photos/v2/list?page=1&limit=10";
+  const url = "https://picsum.photos/v2/list?page=1&limit=8";
   try {
     const response = await fetch(url);
     if (!response.ok) {
