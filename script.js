@@ -1,6 +1,5 @@
 "use strict";
 
-// Email Validation
 const btnNewsletter = document.querySelector(".newsletter__input--button");
 const inputEmail = document.querySelector(".newsletter__email-input");
 const chekboxEmail = document.querySelector(".newsletter__checkbox--check");
@@ -25,23 +24,19 @@ btnNewsletter.addEventListener("click", (e) => {
   }
 });
 
-// Fetch images
-async function getImages() {
+function getImages() {
   const url = "https://picsum.photos/v2/list?page=1&limit=8";
-  try {
-    const response = await fetch(url);
-    if (!response.ok) {
-      throw new Error(`Response status: ${response.status}`);
-    }
-    const json = await response.json();
-    return json;
-  } catch (error) {
-    console.log(error.message);
-    return [];
-  }
+  return fetch(url)
+    .then((response) => {
+      if (!response.ok) throw new Error(`Response status: ${response.status}`);
+      return response.json();
+    })
+    .catch((error) => {
+      console.log(error.message);
+      return [];
+    });
 }
 
-// Set images to category images
 const categoryPictures = Array.from(
   document.querySelectorAll(".category__photo picture img")
 );
@@ -49,9 +44,7 @@ const categorySource = Array.from(
   document.querySelectorAll(".category__photo picture source")
 );
 
-(async () => {
-  const images = await getImages();
-
+getImages().then((images) => {
   for (let i = 0; i < images.length && i < categoryPictures.length; i++) {
     categoryPictures[i].src =
       categoryPictures[i].dataset.src =
@@ -59,8 +52,8 @@ const categorySource = Array.from(
       categorySource[i].data =
         images[i].download_url;
   }
-})();
-// Lazy loading - zbyt długo się ładują obrazki - odkomentować .blur w categories.scss
+});
+
 const imgTargets = document.querySelectorAll("img[data-src]");
 
 const loadImg = function (entries, observer) {
