@@ -421,15 +421,15 @@
   display: flex;
   flex-direction: column;
   text-align: right;
+  gap: 15px;
 }
 .footer__contact h3 {
   font-size: 15px;
+  margin-bottom: 10px;
 }
-.footer__contact :nth-of-type(2) {
+.footer__contact span:nth-of-type(2), .footer__contact span:nth-of-type(3) {
   font-size: 13px;
-}
-.footer__contact :nth-of-type(3) {
-  font-size: 13px;
+  line-height: 1.5;
 }
 .footer__contact span img {
   padding-right: 10px;
@@ -446,9 +446,12 @@
     justify-content: space-around;
   }
   .footer__contact {
-    gap: 10px;
+    gap: 15px;
     text-align: center;
     justify-content: center;
+  }
+  .footer__contact h3 {
+    margin-bottom: 10px;
   }
   .footer__contact span:nth-child(3) {
     display: flex;
