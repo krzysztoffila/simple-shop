@@ -1,43 +1,79 @@
-# Konfiguracja
+# Zadanie Rekrutacyjne - Sklep Internetowy
 
-```
-npm install
-sass --watch style.scss style.css
+## Opis
 
-```
+To jest projekt sklepu internetowego stworzony przy użyciu HTML, SCSS, JavaScript i jQuery. Aplikacja umożliwia zapisanie się do newslettera oraz dynamiczne ładowanie obrazów kategorii. Sklep jest responsywny i obsługuje lazy loading obrazów, co poprawia wydajność ładowania strony.
 
-# Lista uwag dotyczących projektu
+## Technologie
 
-## Ogólne uwagi
+- HTML
+- SCSS
+- JavaScript (ES6+)
+- jQuery
+- Webpack
 
-- W niektórych przypadkach atrybuty tekstu oraz odstępy się nie zgadzają.
+## Instalacja
 
-## Konfiguracja
+Aby zainstalować projekt lokalnie, wykonaj następujące kroki:
 
-- Problem z konfiguracją SASS - chciałem umieścić `map.css` oraz `.css` w osobnym folderze.
+1. **Klonowanie repozytorium**
 
-## Slider
+   ```bash
+   git clone https://github.com/yourusername/zadanie-rekrutacyjne.git
+   ```
 
-- Problem z nadaniem klas flexbox na SLIDER - rozwiązanie za pomocą `.slick-slide`.
-- Problemy ze stylizacją strzałek - są niewidoczne na białym tle.
+2. **Przejdź do katalogu projektu**
 
-## Nagłówek
+   ```bash
+   cd zadanie-rekrutacyjne
+   ```
 
-- Problem z pobraniem ikonki lupy oraz listy menu (trzy paski).
-- Czy miało być rozwijane menu?
+3. **Zainstaluj zależności**
 
-## Newsletter
+   Upewnij się, że masz zainstalowanego Node.js oraz npm, a następnie zainstaluj wszystkie potrzebne pakiety:
 
-- Walidacja checkboxa - Na mniejszej rozdzielczości znika, więc zastosowałem sprawdzenie szerokości ekranu.
-  - Na mniejszej rozdzielczości nie jest wymagane zaznaczenie checkboxa.
+   ```bash
+   npm install
+   ```
 
-## Zadania
+4. **Zbuduj projekt**
 
-- [CATEGORIES] Zamiast `<img>` można zastosowałem `<picture><source media>`. Zazwyczaj używam samego img. -[Dokumentacja](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture)
+   Aby zbudować projekt i stworzyć zminifikowane pliki, uruchom:
 
-- [CATEGORIES] Nigdy nie robiłem lazy loading - problem z długim ładowaniem obrazków na szybkim łączu internetowym.
+   ```bash
+   npm run build
+   ```
 
-  - [Link do kursu na Udemy](https://www.udemy.com/course/the-complete-javascript-course/learn/lecture/22648999)
+5. **Uruchom projekt**
 
-- [NEWSLETTER] Checkbox border - `border: none` nie działa na wszystkich przeglądarkach.
-  - [Rozwiązanie na Stack Overflow](https://stackoverflow.com/questions/3544690/how-do-i-remove-checkbox-border)
+   Po zbudowaniu projektu, otwórz plik `index.html` w folderze `dist` w przeglądarce, aby zobaczyć sklep w akcji.
+
+## Użycie
+
+Po uruchomieniu projektu użytkownicy mogą:
+
+- Zapisać się do newslettera, podając adres e-mail i akceptując warunki.
+- Przeglądać kategorie produktów z dynamicznie ładowanymi obrazami.
+- Korzystać z karuzeli produktów, aby przewijać dostępne oferty.
+
+## Funkcjonalności
+
+- **Zapis do newslettera**: Umożliwia użytkownikom zapisanie się do newslettera po wprowadzeniu poprawnego adresu e-mail.
+- **Lazy loading obrazów**: Obrazy ładują się tylko wtedy, gdy są widoczne na ekranie, co poprawia wydajność strony.
+- **Karuzela produktów**: Umożliwia przewijanie produktów w sliderze.
+
+## Przykłady
+
+W projekcie wykorzystano API do pobierania obrazów:
+
+- [Picsum Photos](https://picsum.photos)
+
+## Autor
+
+- **Krzysztof Fila**
+- **Adres e-mail**: umowy.fila@gmail.com
+- **GitHub**: [krzysztoffila](https://github.com/krzysztoffila)
+
+## Licencja
+
+Projekt jest licencjonowany na zasadach licencji ISC.
