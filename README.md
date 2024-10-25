@@ -1,4 +1,4 @@
-# Zadanie Rekrutacyjne - Sklep Internetowy
+# Sklep Internetowy
 
 ## Opis
 
